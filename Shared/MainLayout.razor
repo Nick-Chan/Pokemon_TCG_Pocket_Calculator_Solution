@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+
+<CascadingValue Value="this">
+    <div class="page">
+        <main>
+            <div class="top-row px-4">
+                <h3>Pokémon TCG Pocket</h3>
+                <div class="button-group">
+                    <button class="calculate-button" @onclick="SelectAllClicked">Select All</button>
+                    <button class="calculate-button" @onclick="DeselectAllClicked">Deselect All</button>
+                    <button class="calculate-button" @onclick="OnCalculateClicked">Calculate Best Packs</button>
+                </div>
+            </div>
+
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+</CascadingValue>
+
+@code {
+    public event Action SelectAllTriggered;
+    public event Action DeselectAllTriggered;
+    public event Action CalculatePacksTriggered;
+
+    private void SelectAllClicked()
+    {
+        SelectAllTriggered?.Invoke();
+    }
+    private void DeselectAllClicked()
+    {
+        DeselectAllTriggered?.Invoke();
+    }
+    private void OnCalculateClicked()
+    {
+        CalculatePacksTriggered?.Invoke();
+    }
+
+}

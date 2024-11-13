@@ -1,0 +1,164 @@
+﻿@page "/"
+
+@inherits LayoutComponentBase
+
+<div class="suggested-packs-frame">
+    <div class="suggested-packs">
+        <h4>Suggested Packs:</h4>
+        <ul>
+            @if (UnownedCardDetails.Count > 0)
+            {
+                @foreach (var detail in UnownedCardDetails)
+                {
+                    <li>@detail</li>
+                }
+            }
+            else
+            {
+                <li>Click on all the cards that you own, then click Calculate to show which packs are best for you to open!</li>
+            }
+        </ul>
+    </div>
+</div>
+
+<h3>Genetic Apex (A1) Collection</h3>
+
+<div class="cards-grid">
+    @foreach (var card in Cards)
+    {
+        <div class="card" @onclick="() => ToggleCardOwnership(card)">
+            <div class="card-container">
+                <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                @if (!card.IsOwned)
+                {
+                    <div class="overlay">
+                        <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+    private List<Models.Card> Cards = new();
+    private List<string> UnownedCardDetails = new();
+    private List<CardData> CardDataFromJson = new();
+
+    [Inject]
+    private HttpClient Http { get; set; }
+
+    [CascadingParameter]
+    private MainLayout MainLayout { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Initialize 286 cards
+        for (int i = 1; i <= 286; i++)
+        {
+            Cards.Add(new Models.Card { Id = i, CardName = $"Card {i}", DisplayName = $"A1 {i:D3}" });
+        }
+
+        // Subscribe to the OnClick events
+        MainLayout.SelectAllTriggered += SelectAll;
+        MainLayout.DeselectAllTriggered += DeselectAll;
+        MainLayout.CalculatePacksTriggered += CalculatePacks;
+
+        // Load JSON data
+        var json = await Http.GetStringAsync("data/A1.json");
+        CardDataFromJson = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(json);
+
+        StateHasChanged();
+    }
+
+    private void CalculatePacks()
+    {
+        // Clear previous results
+        UnownedCardDetails.Clear();
+
+        int mewtwo = 0;
+        int pikachu = 0;
+        int charizard = 0;
+        int all = 0;
+
+        // Iterate through unowned cards and fetch details from JSON
+        foreach (var card in Cards.Where(c => !c.IsOwned))
+        {
+            var matchingData = CardDataFromJson.FirstOrDefault(data => data.CardID == card.DisplayName);
+            if (matchingData != null)
+            {
+                if (matchingData.Pack == "Mewtwo")
+                {
+                    mewtwo += 1;
+                }
+                if (matchingData.Pack == "Pikachu")
+                {
+                    pikachu += 1;
+                }
+                if (matchingData.Pack == "Charizard")
+                {
+                    charizard += 1;
+                }
+                if (matchingData.Pack == "All")
+                {
+                    all += 1;
+                }
+                
+                UnownedCardDetails.Add($"Name: {matchingData.CardName}, Pack: {matchingData.Pack}, Rarity: {matchingData.Rarity}");
+            }
+        }
+
+        UnownedCardDetails.Add($"Mewtwo Packs: {mewtwo}, Pikachu Packs: {pikachu}, Charizard Packs: {charizard}, All Packs: {all}");
+
+        StateHasChanged(); // Refresh UI
+    }
+
+    private void SelectAll()
+    {
+        foreach (var card in Cards)
+        {
+            card.IsOwned = true;
+        }
+
+        StateHasChanged(); // Ensure UI updates
+    }
+
+    private void DeselectAll()
+    {
+        foreach (var card in Cards)
+        {
+            card.IsOwned = false;
+        }
+
+        StateHasChanged(); // Ensure UI updates
+    }
+
+    private void ToggleCardOwnership(Models.Card card)
+    {
+        card.IsOwned = !card.IsOwned;
+    }
+
+    private string GetCardImage(Models.Card card)
+    {
+        return !card.IsOwned
+            ? "/images/cards/A1_000.png"
+            : $"/images/cards/{card.DisplayName.Replace(" ", "_")}.png";
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe from the event to avoid memory leaks
+        MainLayout.CalculatePacksTriggered -= CalculatePacks;
+    }
+}
+
+@code {
+    public class CardData
+    {
+        public string CardID { get; set; }
+        public string CardName { get; set; }
+        public string Pack { get; set; }
+        public string Rarity { get; set; }
+    }
+}
