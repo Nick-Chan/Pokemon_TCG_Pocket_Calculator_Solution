@@ -4,26 +4,75 @@
 
 <div class="suggested-packs-frame">
     <div class="suggested-packs">
-        <h4>Suggested Packs:</h4>
-        <ul>
-            @if (UnownedCardDetails.Count > 0)
+        <h3>Best pack to open:</h3>
+
+        <img src="@BestPackImage" alt="@BestPackCalculation" class="pack-image" />
+        <p>@(new MarkupString(BestPackCalculation))</p>
+
+        <img src="@BestKantoMewImage" alt="@BestKantoMewCalculation" class="pack-image" />
+        <p>@(new MarkupString(BestKantoMewCalculation))</p>
+
+        <hr class="divider" />
+
+        <p>@MewtwoCardCount</p>
+        <p>@PikachuCardCount</p>
+        <p>@CharizardCardCount</p>
+        <p>@AllCardCount</p>
+        <p>@DiamondCardCount</p>
+        <p>@StarCardCount</p>
+        <p>@KantoMewCardCount</p>
+        <p>@CardCount</p>
+
+        @if (HasCalculated)
+        {
+            @foreach (var pack in PackDetails.Keys.Where(key => key != "Kanto"))
             {
-                @foreach (var detail in UnownedCardDetails)
+                @if (PackCardDetails[pack].Count > 0)
                 {
-                    <li>@detail</li>
+                    <button class="toggle-button" @onclick="() => TogglePackDetails(pack)">
+                        @(PackDetails[pack] ? $"Hide Missing {pack} Cards" : $"Show Missing {pack} Cards")
+                    </button>
+
+                    @if (PackDetails[pack])
+                    {
+                        <ul>
+                            @foreach (var detail in PackCardDetails[pack])
+                            {
+                                <li>@detail</li>
+                            }
+                        </ul>
+                    }
                 }
             }
-            else
+
+            @if (PackCardDetails["Kanto"].Count > 0)
             {
-                <li>Click on all the cards that you own, then click Calculate to show which packs are best for you to open!</li>
+                <button class="toggle-button" @onclick="ToggleKantoMewDetails">
+                    @(ShowKantoMewDetails ? "Hide Missing Kanto Cards" : "Show Missing Kanto Cards")
+                </button>
+
+                @if (ShowKantoMewDetails)
+                {
+                    <ul>
+                        @foreach (var detail in PackCardDetails["Kanto"])
+                        {
+                            <li>@detail</li>
+                        }
+                    </ul>
+                }
             }
-        </ul>
+        }
+
+        @if (!HasCalculated)
+        {
+            <p>Click on all the cards that you own, then click Calculate to show which packs are best for you to open!</p>
+        }
     </div>
 </div>
 
 <h3>Genetic Apex (A1) Collection</h3>
 
-<div class="cards-grid">
+<div class="cards-grid @CurrentGridClass">
     @foreach (var card in Cards)
     {
         <div class="card" @onclick="() => ToggleCardOwnership(card)">
@@ -40,11 +89,29 @@
     }
 </div>
 
-
 @code {
+    private string CurrentGridClass { get; set; } = "grid-medium";
     private List<Models.Card> Cards = new();
-    private List<string> UnownedCardDetails = new();
+    private Dictionary<string, bool> PackDetails = new();
+    private Dictionary<string, List<string>> PackCardDetails = new();
     private List<CardData> CardDataFromJson = new();
+
+    private bool HasCalculated { get; set; } = false;
+    private bool ShowKantoMewDetails { get; set; } = false;
+
+    private string BestPackCalculation { get; set; } = string.Empty;
+    private string BestPackImage { get; set; } = string.Empty;
+    private string BestKantoMewCalculation { get; set; } = string.Empty;
+    private string BestKantoMewImage { get; set; } = string.Empty;
+
+    private string CardCount { get; set; } = string.Empty;
+    private string MewtwoCardCount { get; set; } = string.Empty;
+    private string PikachuCardCount { get; set; } = string.Empty;
+    private string CharizardCardCount { get; set; } = string.Empty;
+    private string AllCardCount { get; set; } = string.Empty;
+    private string DiamondCardCount { get; set; } = string.Empty;
+    private string StarCardCount { get; set; } = string.Empty;
+    private string KantoMewCardCount { get; set; } = string.Empty;
 
     [Inject]
     private HttpClient Http { get; set; }
@@ -60,6 +127,30 @@
             Cards.Add(new Models.Card { Id = i, CardName = $"Card {i}", DisplayName = $"A1 {i:D3}" });
         }
 
+        MainLayout.GridSizeChanged += UpdateGridSize; // Subscribe to grid size changes
+
+        // Load saved state from cookies
+        await LoadCardStateFromLocalStorage();
+
+        // Initialize pack details and toggle state
+        PackDetails = new Dictionary<string, bool>
+        {
+            { "Mewtwo", false },
+            { "Pikachu", false },
+            { "Charizard", false },
+            { "Shared", false },
+            { "Kanto", false }
+        };
+
+        PackCardDetails = new Dictionary<string, List<string>>
+        {
+            { "Mewtwo", new List<string>() },
+            { "Pikachu", new List<string>() },
+            { "Charizard", new List<string>() },
+            { "Shared", new List<string>() },
+            { "Kanto", new List<string>() }
+        };
+
         // Subscribe to the OnClick events
         MainLayout.SelectAllTriggered += SelectAll;
         MainLayout.DeselectAllTriggered += DeselectAll;
@@ -68,50 +159,293 @@
         // Load JSON data
         var json = await Http.GetStringAsync("data/A1.json");
         CardDataFromJson = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(json);
+    }
 
-        StateHasChanged();
+    private void TogglePackDetails(string pack)
+    {
+        PackDetails[pack] = !PackDetails[pack];
+    }
+
+    private void ToggleKantoMewDetails()
+    {
+        ShowKantoMewDetails = !ShowKantoMewDetails;
     }
 
     private void CalculatePacks()
     {
-        // Clear previous results
-        UnownedCardDetails.Clear();
+        // Reset pack details
+        foreach (var key in PackCardDetails.Keys)
+        {
+            PackCardDetails[key].Clear();
+        }
 
-        int mewtwo = 0;
-        int pikachu = 0;
-        int charizard = 0;
-        int all = 0;
+        // Set pack count integers
+        int mewtwo = 0, pikachu = 0, charizard = 0, all = 0;
 
-        // Iterate through unowned cards and fetch details from JSON
+        // Rarity-based counters
+        int diamondCount = 0; // Total unowned diamond cards (♢, ♢♢, ♢♢♢, ♢♢♢♢)
+        int starCount = 0;    // Total unowned star cards (☆, ☆☆, ☆☆☆, ♛)
+
+        var unownedByPack = new Dictionary<string, Dictionary<string, int>>
+        {
+            { "Mewtwo", new Dictionary<string, int>() },
+            { "Pikachu", new Dictionary<string, int>() },
+            { "Charizard", new Dictionary<string, int>() },
+            { "Shared", new Dictionary<string, int>() },
+            { "Kanto", new Dictionary<string, int>() }
+        };
+
+        var kantoMewUnownedByPack = new Dictionary<string, Dictionary<string, int>>
+        {
+            { "Mewtwo", new Dictionary<string, int>() },
+            { "Pikachu", new Dictionary<string, int>() },
+            { "Charizard", new Dictionary<string, int>() },
+            { "Shared", new Dictionary<string, int>() }
+        };
+
+        var totalByRarity = new Dictionary<string, int>();
+        foreach (var card in CardDataFromJson)
+        {
+            if (!totalByRarity.ContainsKey(card.Rarity))
+                totalByRarity[card.Rarity] = 0;
+
+            totalByRarity[card.Rarity]++;
+        }
+
+        // Loop through unowned cards
         foreach (var card in Cards.Where(c => !c.IsOwned))
         {
             var matchingData = CardDataFromJson.FirstOrDefault(data => data.CardID == card.DisplayName);
             if (matchingData != null)
             {
+                // Count by pack
                 if (matchingData.Pack == "Mewtwo")
                 {
-                    mewtwo += 1;
+                    mewtwo++;
+                    if (!unownedByPack["Mewtwo"].ContainsKey(matchingData.Rarity))
+                        unownedByPack["Mewtwo"][matchingData.Rarity] = 0;
+                    unownedByPack["Mewtwo"][matchingData.Rarity]++;
+                    PackCardDetails["Mewtwo"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
                 }
-                if (matchingData.Pack == "Pikachu")
+                else if (matchingData.Pack == "Pikachu")
                 {
-                    pikachu += 1;
+                    pikachu++;
+                    if (!unownedByPack["Pikachu"].ContainsKey(matchingData.Rarity))
+                        unownedByPack["Pikachu"][matchingData.Rarity] = 0;
+                    unownedByPack["Pikachu"][matchingData.Rarity]++;
+                    PackCardDetails["Pikachu"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
                 }
-                if (matchingData.Pack == "Charizard")
+                else if (matchingData.Pack == "Charizard")
                 {
-                    charizard += 1;
+                    charizard++;
+                    if (!unownedByPack["Charizard"].ContainsKey(matchingData.Rarity))
+                        unownedByPack["Charizard"][matchingData.Rarity] = 0;
+                    unownedByPack["Charizard"][matchingData.Rarity]++;
+                    PackCardDetails["Charizard"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
                 }
-                if (matchingData.Pack == "All")
+                else if (matchingData.Pack == "All")
                 {
-                    all += 1;
+                    all++;
+                    if (!unownedByPack["Shared"].ContainsKey(matchingData.Rarity))
+                        unownedByPack["Shared"][matchingData.Rarity] = 0;
+                    unownedByPack["Shared"][matchingData.Rarity]++;
+                    PackCardDetails["Shared"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
                 }
-                
-                UnownedCardDetails.Add($"Name: {matchingData.CardName}, Pack: {matchingData.Pack}, Rarity: {matchingData.Rarity}");
+
+                // Count by rarity
+                if (matchingData.Rarity.Contains("♢")) diamondCount++;
+                if (matchingData.Rarity.Contains("☆") || matchingData.Rarity == "♛") starCount++;
+
+                // Add missing KantoMew cards to details
+                if (!string.IsNullOrWhiteSpace(matchingData.KantoMew) &&
+                    matchingData.KantoMew.Trim().Equals("Yes", StringComparison.OrdinalIgnoreCase))
+                {
+                    PackCardDetails["Kanto"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
+                }
             }
         }
 
-        UnownedCardDetails.Add($"Mewtwo Packs: {mewtwo}, Pikachu Packs: {pikachu}, Charizard Packs: {charizard}, All Packs: {all}");
+        // Variables for Kanto Mew tracking
+        int kantoMewOwnedCount = 0;
+        bool isDuplicateGroupCounted = false; // Tracks if one Eevee card has been counted
+        bool isEeveeAdded = false; // Tracks if one Eevee card is being added for unowned cards
 
-        StateHasChanged(); // Refresh UI
+        // Loop through unowned cards to calculate the best KantoMew pack
+        foreach (var card in Cards.Where(c => !c.IsOwned))
+        {
+            var matchingData = CardDataFromJson.FirstOrDefault(data =>
+                data.CardID.Equals(card.DisplayName, StringComparison.Ordinal));
+
+            if (matchingData != null &&
+                !string.IsNullOrWhiteSpace(matchingData.KantoMew) &&
+                matchingData.KantoMew.Trim().Equals("Yes", StringComparison.OrdinalIgnoreCase))
+            {
+                // Handle Eevee group (A1 206, 207, 208) for unowned cards
+                if (matchingData.CardID is "A1 206" or "A1 207" or "A1 208")
+                {
+                    if (!isEeveeAdded)
+                    {
+                        isEeveeAdded = true;
+                    }
+                    else
+                    {
+                        continue; // Skip adding duplicates for Eevee group
+                    }
+                }
+
+                // Add to unowned KantoMew counts
+                if (!kantoMewUnownedByPack[matchingData.Pack].ContainsKey(matchingData.Rarity))
+                {
+                    kantoMewUnownedByPack[matchingData.Pack][matchingData.Rarity] = 0;
+                }
+
+                kantoMewUnownedByPack[matchingData.Pack][matchingData.Rarity]++;
+                PackCardDetails["Kanto"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
+            }
+        }
+
+        // Loop through owned cards to calculate the KantoMew owned count
+        foreach (var card in Cards.Where(c => c.IsOwned))
+        {
+            var matchingData = CardDataFromJson.FirstOrDefault(data =>
+                data.CardID.Equals(card.DisplayName, StringComparison.Ordinal));
+
+            if (matchingData != null &&
+                !string.IsNullOrWhiteSpace(matchingData.KantoMew) &&
+                matchingData.KantoMew.Trim().Equals("Yes", StringComparison.OrdinalIgnoreCase))
+            {
+                // Handle the Eevee group (A1 206, 207, 208) for owned cards
+                if (matchingData.CardID is "A1 206" or "A1 207" or "A1 208")
+                {
+                    if (!isDuplicateGroupCounted)
+                    {
+                        isDuplicateGroupCounted = true;
+                        kantoMewOwnedCount++;
+                    }
+                }
+                else
+                {
+                    kantoMewOwnedCount++;
+                }
+            }
+        }
+
+        // Update pack counts
+        MewtwoCardCount = $"Mewtwo Pack Cards Owned: {79 - mewtwo}/79 ({((79.0 - mewtwo) / 79.0 * 100):F2}%)";
+        PikachuCardCount = $"Pikachu Pack Cards Owned: {80 - pikachu}/80 ({((80.0 - pikachu) / 80.0 * 100):F2}%)";
+        CharizardCardCount = $"Charizard Pack Cards Owned: {80 - charizard}/80 ({((80.0 - charizard) / 80.0 * 100):F2}%)";
+        AllCardCount = $"Shared Cards Owned: {46 - all}/46 ({((46.0 - all) / 46.0 * 100):F2}%)";
+        CardCount = $"Total Cards Owned: {285 - mewtwo - pikachu - charizard - all}/286 ({((285.0 - mewtwo - pikachu - charizard - all) / 286.0 * 100):F2}%)";
+
+        // Update diamond and star counts
+        DiamondCardCount = $"Diamond Cards (♢) Owned: {totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) - diamondCount}/{totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value)} ({((totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) - diamondCount) / (double)totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) * 100):F2}%)";
+
+        StarCardCount = $"Star Cards (☆, ♛) Owned: {totalByRarity.Where(r => r.Key.Contains("☆") || r.Key == "♛").Sum(r => r.Value) - starCount}/{totalByRarity.Where(r => r.Key.Contains("☆") || r.Key == "♛").Sum(r => r.Value)} ({((totalByRarity.Where(r => r.Key.Contains("☆") || r.Key == "♛").Sum(r => r.Value) - starCount) / (double)totalByRarity.Where(r => r.Key.Contains("☆") || r.Key == "♛").Sum(r => r.Value) * 100):F2}%)";
+
+        // Update KantoMew card count
+        KantoMewCardCount = $"Kanto Cards Owned (for Mew): {kantoMewOwnedCount}/150 ({(kantoMewOwnedCount / 150.0 * 100):F2}%)";
+
+        // Rarity percentages
+        var rarityRates = new Dictionary<string, double[]>
+        {
+            { "♢", new[] { 1.0, 0.0, 0.0 } },
+            { "♢♢", new[] { 0.0, 0.9, 0.6 } },
+            { "♢♢♢", new[] { 0.0, 0.05, 0.2 } },
+            { "♢♢♢♢", new[] { 0.0, 0.01666, 0.06664 } },
+            { "☆", new[] { 0.0, 0.02572, 0.10288 } },
+            { "☆☆", new[] { 0.0, 0.005, 0.02 } },
+            { "☆☆☆", new[] { 0.0, 0.00222, 0.00888 } },
+            { "♛", new[] { 0.0, 0.0004, 0.0016 } }
+        };
+
+        // Calculate best pack to open
+        string bestPack = GetBestPack(rarityRates, unownedByPack, totalByRarity);
+
+        // Check if all cards are owned
+        if (bestPack.Contains("0.00%"))
+        {
+            BestPackCalculation = "Congratulations, you own all the cards!";
+            BestPackImage = "/images/packs/pack_all.png";
+        }
+        else
+        {
+            // Show the calculated best pack
+            BestPackCalculation = $"{bestPack}";
+
+            // Extract the pack name from the best pack string to insert image
+            var bestPackName = bestPack.Split(' ')[0].ToLower();
+            BestPackImage = $"/images/packs/pack_{bestPackName}.jpg";
+        }
+
+        // Calculate best Kanto pack to open
+        string bestKantoMewPack = GetBestPack(rarityRates, kantoMewUnownedByPack, totalByRarity);
+
+        // Check if all KantoMew cards are owned
+        if (PackCardDetails["Kanto"].Count == 0)
+        {
+            BestKantoMewCalculation = "Congratulations, you own all the KantoMew cards!";
+            BestKantoMewImage = "/images/packs/pack_all.png";
+        }
+        else
+        {
+            // Show the calculated best KantoMew pack
+            BestKantoMewCalculation = $"{bestKantoMewPack}";
+
+            // Extract the pack name for the image
+            var bestPackName = bestKantoMewPack.Split(' ')[0].ToLower();
+            BestKantoMewImage = $"/images/packs/pack_{bestPackName}.jpg";
+        }
+
+        // Refresh UI and set calculation
+        HasCalculated = true;
+        StateHasChanged();
+    }
+
+
+    private double CalculatePackProbability(string pack, Dictionary<string, double[]> rarityRates, Dictionary<string, int> unownedByRarity, Dictionary<string, int> totalByRarity)
+    {
+        double notNewCardProbability = 1.0;
+
+        // Slot probabilities: 1-3, 4th, 5th
+        var slots = new[] { 0, 1, 2 };
+
+        foreach (var rarity in rarityRates.Keys)
+        {
+            var rates = rarityRates[rarity]; // Probabilities for 1-3, 4th, 5th slots
+            var unowned = unownedByRarity.ContainsKey(rarity) ? unownedByRarity[rarity] : 0;
+            var total = totalByRarity.ContainsKey(rarity) ? totalByRarity[rarity] : 1; // Avoid divide by zero
+
+            double chanceNewCard = unowned > 0 ? (double)unowned / total : 0;
+
+            for (int i = 0; i < slots.Length; i++)
+            {
+                double slotProbability = rates[i] * chanceNewCard;
+                notNewCardProbability *= (1 - slotProbability);
+            }
+        }
+
+        // Return probability of at least one new card in the pack
+        return 1 - notNewCardProbability;
+    }
+
+    private string GetBestPack(Dictionary<string, double[]> rarityRates, Dictionary<string, Dictionary<string, int>> unownedByPack, Dictionary<string, int> totalByRarity)
+    {
+        string bestPack = null;
+        double bestProbability = 0;
+
+        foreach (var pack in unownedByPack.Keys)
+        {
+            var unownedByRarity = unownedByPack[pack];
+            double probability = CalculatePackProbability(pack, rarityRates, unownedByRarity, totalByRarity);
+
+            if (probability > bestProbability)
+            {
+                bestProbability = probability;
+                bestPack = pack;
+            }
+        }
+
+        return $"{bestPack} Pack<br>({(bestProbability * 100):F2}% chance to open a new card!)";
     }
 
     private void SelectAll()
@@ -134,9 +468,45 @@
         StateHasChanged(); // Ensure UI updates
     }
 
-    private void ToggleCardOwnership(Models.Card card)
+    private async void ToggleCardOwnership(Models.Card card)
     {
         card.IsOwned = !card.IsOwned;
+        await SaveCardStateToLocalStorage();
+    }
+
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; }
+
+    // Save card state to cookies
+    private async Task SaveCardStateToLocalStorage()
+    {
+        var cardState = Cards.Select(c => new { c.Id, c.IsOwned }).ToList();
+        var json = System.Text.Json.JsonSerializer.Serialize(cardState);
+
+        // Save to localStorage
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "cardState", json);
+    }
+
+
+    // Load card state to cookies
+    private async Task LoadCardStateFromLocalStorage()
+    {
+        var json = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "cardState");
+        if (!string.IsNullOrEmpty(json))
+        {
+            var cardState = System.Text.Json.JsonSerializer.Deserialize<List<Models.Card>>(json);
+            if (cardState != null)
+            {
+                foreach (var state in cardState)
+                {
+                    var card = Cards.FirstOrDefault(c => c.Id == state.Id);
+                    if (card != null)
+                    {
+                        card.IsOwned = state.IsOwned;
+                    }
+                }
+            }
+        }
     }
 
     private string GetCardImage(Models.Card card)
@@ -146,10 +516,17 @@
             : $"/images/cards/{card.DisplayName.Replace(" ", "_")}.png";
     }
 
+    private void UpdateGridSize(string size)
+    {
+        CurrentGridClass = $"grid-{size}"; // Dynamically update the grid class
+        StateHasChanged(); // Trigger UI update
+    }
+
     public void Dispose()
     {
         // Unsubscribe from the event to avoid memory leaks
         MainLayout.CalculatePacksTriggered -= CalculatePacks;
+        MainLayout.GridSizeChanged -= UpdateGridSize; // Unsubscribe to avoid memory leaks
     }
 }
 
@@ -160,5 +537,6 @@
         public string CardName { get; set; }
         public string Pack { get; set; }
         public string Rarity { get; set; }
+        public string KantoMew { get; set; }
     }
 }

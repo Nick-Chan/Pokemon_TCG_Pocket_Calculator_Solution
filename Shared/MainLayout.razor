@@ -3,12 +3,21 @@
 <CascadingValue Value="this">
     <div class="page">
         <main>
-            <div class="top-row px-4">
-                <h3>Pokémon TCG Pocket</h3>
+            <div class="top-row">
+                <h3>Pokémon TCG Pocket Calculator</h3>
+
+                <div class="grid-controls-wrapper">
+                    <div class="grid-controls">
+                        <button class="resize-button" @onclick='() => OnResizeGrid("small")'>Small</button>
+                        <button class="resize-button" @onclick='() => OnResizeGrid("medium")'>Medium</button>
+                        <button class="resize-button" @onclick='() => OnResizeGrid("large")'>Large</button>
+                    </div>
+                </div>
+
                 <div class="button-group">
                     <button class="calculate-button" @onclick="SelectAllClicked">Select All</button>
                     <button class="calculate-button" @onclick="DeselectAllClicked">Deselect All</button>
-                    <button class="calculate-button" @onclick="OnCalculateClicked">Calculate Best Packs</button>
+                    <button class="calculate-button" @onclick="OnCalculateClicked">Calculate</button>
                 </div>
             </div>
 
@@ -32,9 +41,21 @@
     {
         DeselectAllTriggered?.Invoke();
     }
-    private void OnCalculateClicked()
+
+    @inject IJSRuntime JSRuntime
+
+    private async void OnCalculateClicked()
     {
         CalculatePacksTriggered?.Invoke();
+        await JSRuntime.InvokeVoidAsync("scrollToTop"); // Scroll to the top of the screen
+    }
+
+    [CascadingParameter] private MainLayout MainLayouts { get; set; }
+    public event Action<string> GridSizeChanged;
+
+    private void OnResizeGrid(string size)
+    {
+        GridSizeChanged?.Invoke(size); // Notify the grid size change
     }
 
 }
