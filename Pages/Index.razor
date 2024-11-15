@@ -4,15 +4,30 @@
 
 <div class="suggested-packs-frame">
     <div class="suggested-packs">
-        <h3>Best pack to open:</h3>
+        
+        @if (HasCalculated)
+        {
+            <h3>Best pack to open:</h3>
 
-        <img src="@BestPackImage" alt="@BestPackCalculation" class="pack-image" />
-        <p>@(new MarkupString(BestPackCalculation))</p>
+            @if (ShowBestPack)
+            {
+                <img src="@BestPackImage" alt="@BestPackCalculation" class="pack-image" />
+                <p>@(new MarkupString(BestPackCalculation))</p>
+            }
+            else
+            {
+                <img src="@BestKantoMewImage" alt="@BestKantoMewCalculation" class="pack-image" />
+                <p>@(new MarkupString(BestKantoMewCalculation))</p>
+            }
 
-        <img src="@BestKantoMewImage" alt="@BestKantoMewCalculation" class="pack-image" />
-        <p>@(new MarkupString(BestKantoMewCalculation))</p>
+            <div class="toggle-container">
+                    <button class="toggle-button" @onclick="ToggleCalculation">
+                    @(ShowBestPack ? "Switch to best pack for Kanto cards" : "Switch to best pack for any card")
+                </button>
+            </div>
 
-        <hr class="divider" />
+            <hr class="divider" />
+        }
 
         <p>@MewtwoCardCount</p>
         <p>@PikachuCardCount</p>
@@ -29,8 +44,11 @@
             {
                 @if (PackCardDetails[pack].Count > 0)
                 {
+
                     <button class="toggle-button" @onclick="() => TogglePackDetails(pack)">
-                        @(PackDetails[pack] ? $"Hide Missing {pack} Cards" : $"Show Missing {pack} Cards")
+                        @(PackDetails[pack]
+                            ? $"Hide Missing {(pack == "All" ? "Shared" : pack)} Cards"
+                            : $"Show Missing {(pack == "All" ? "Shared" : pack)} Cards")
                     </button>
 
                     @if (PackDetails[pack])
@@ -65,7 +83,7 @@
 
         @if (!HasCalculated)
         {
-            <p>Click on all the cards that you own, then click Calculate to show which packs are best for you to open!</p>
+            <p>Click on all the cards that you own, then click "Calculate" to show which packs are best for you to open!</p>
         }
     </div>
 </div>
@@ -80,8 +98,9 @@
                 <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
                 @if (!card.IsOwned)
                 {
-                    <div class="overlay">
+                    <div class="overlay @OverlayClass">
                         <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                        <p class="card-name">@CardDataFromJson.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
                     </div>
                 }
             </div>
@@ -91,6 +110,8 @@
 
 @code {
     private string CurrentGridClass { get; set; } = "grid-medium";
+    private string OverlayClass { get; set; } = "overlay-medium";
+
     private List<Models.Card> Cards = new();
     private Dictionary<string, bool> PackDetails = new();
     private Dictionary<string, List<string>> PackCardDetails = new();
@@ -98,6 +119,7 @@
 
     private bool HasCalculated { get; set; } = false;
     private bool ShowKantoMewDetails { get; set; } = false;
+    private bool ShowBestPack { get; set; } = true;
 
     private string BestPackCalculation { get; set; } = string.Empty;
     private string BestPackImage { get; set; } = string.Empty;
@@ -138,7 +160,7 @@
             { "Mewtwo", false },
             { "Pikachu", false },
             { "Charizard", false },
-            { "Shared", false },
+            { "All", false },
             { "Kanto", false }
         };
 
@@ -147,7 +169,7 @@
             { "Mewtwo", new List<string>() },
             { "Pikachu", new List<string>() },
             { "Charizard", new List<string>() },
-            { "Shared", new List<string>() },
+            { "All", new List<string>() },
             { "Kanto", new List<string>() }
         };
 
@@ -171,6 +193,11 @@
         ShowKantoMewDetails = !ShowKantoMewDetails;
     }
 
+    private void ToggleCalculation()
+    {
+        ShowBestPack = !ShowBestPack;
+    }
+
     private void CalculatePacks()
     {
         // Reset pack details
@@ -191,7 +218,7 @@
             { "Mewtwo", new Dictionary<string, int>() },
             { "Pikachu", new Dictionary<string, int>() },
             { "Charizard", new Dictionary<string, int>() },
-            { "Shared", new Dictionary<string, int>() },
+            { "All", new Dictionary<string, int>() },
             { "Kanto", new Dictionary<string, int>() }
         };
 
@@ -200,7 +227,8 @@
             { "Mewtwo", new Dictionary<string, int>() },
             { "Pikachu", new Dictionary<string, int>() },
             { "Charizard", new Dictionary<string, int>() },
-            { "Shared", new Dictionary<string, int>() }
+            { "All", new Dictionary<string, int>() },
+            { "Kanto", new Dictionary<string, int>() }
         };
 
         var totalByRarity = new Dictionary<string, int>();
@@ -246,10 +274,10 @@
                 else if (matchingData.Pack == "All")
                 {
                     all++;
-                    if (!unownedByPack["Shared"].ContainsKey(matchingData.Rarity))
-                        unownedByPack["Shared"][matchingData.Rarity] = 0;
-                    unownedByPack["Shared"][matchingData.Rarity]++;
-                    PackCardDetails["Shared"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
+                    if (!unownedByPack["All"].ContainsKey(matchingData.Rarity))
+                        unownedByPack["All"][matchingData.Rarity] = 0;
+                    unownedByPack["All"][matchingData.Rarity]++;
+                    PackCardDetails["All"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
                 }
 
                 // Count by rarity
@@ -300,7 +328,6 @@
                 }
 
                 kantoMewUnownedByPack[matchingData.Pack][matchingData.Rarity]++;
-                PackCardDetails["Kanto"].Add($"[{matchingData.CardID.Substring(3)}] {matchingData.CardName} {matchingData.Rarity}");
             }
         }
 
@@ -335,7 +362,15 @@
         PikachuCardCount = $"Pikachu Pack Cards Owned: {80 - pikachu}/80 ({((80.0 - pikachu) / 80.0 * 100):F2}%)";
         CharizardCardCount = $"Charizard Pack Cards Owned: {80 - charizard}/80 ({((80.0 - charizard) / 80.0 * 100):F2}%)";
         AllCardCount = $"Shared Cards Owned: {46 - all}/46 ({((46.0 - all) / 46.0 * 100):F2}%)";
-        CardCount = $"Total Cards Owned: {285 - mewtwo - pikachu - charizard - all}/286 ({((285.0 - mewtwo - pikachu - charizard - all) / 286.0 * 100):F2}%)";
+
+        if (kantoMewOwnedCount == 150)
+        {
+            CardCount = $"Total Cards Owned: {286 - mewtwo - pikachu - charizard - all}/286 ({((286.0 - mewtwo - pikachu - charizard - all) / 286.0 * 100):F2}%)";
+        }
+        else
+        {
+            CardCount = $"Total Cards Owned: {285 - mewtwo - pikachu - charizard - all}/286 ({((285.0 - mewtwo - pikachu - charizard - all) / 286.0 * 100):F2}%)";
+        }
 
         // Update diamond and star counts
         DiamondCardCount = $"Diamond Cards (♢) Owned: {totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) - diamondCount}/{totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value)} ({((totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) - diamondCount) / (double)totalByRarity.Where(r => r.Key.Contains("♢")).Sum(r => r.Value) * 100):F2}%)";
@@ -359,10 +394,10 @@
         };
 
         // Calculate best pack to open
-        string bestPack = GetBestPack(rarityRates, unownedByPack, totalByRarity);
+        string bestPack = GetBestPack(rarityRates, unownedByPack, CardDataFromJson, "GeneticApex");
 
         // Check if all cards are owned
-        if (bestPack.Contains("0.00%"))
+        if (bestPack.Contains("<br>0.00%"))
         {
             BestPackCalculation = "Congratulations, you own all the cards!";
             BestPackImage = "/images/packs/pack_all.png";
@@ -378,12 +413,12 @@
         }
 
         // Calculate best Kanto pack to open
-        string bestKantoMewPack = GetBestPack(rarityRates, kantoMewUnownedByPack, totalByRarity);
+        string bestKantoMewPack = GetBestPack(rarityRates, kantoMewUnownedByPack, CardDataFromJson, "KantoMew");
 
         // Check if all KantoMew cards are owned
         if (PackCardDetails["Kanto"].Count == 0)
         {
-            BestKantoMewCalculation = "Congratulations, you own all the KantoMew cards!";
+            BestKantoMewCalculation = "Congratulations, you own all the Kanto cards!";
             BestKantoMewImage = "/images/packs/pack_all.png";
         }
         else
@@ -401,51 +436,163 @@
         StateHasChanged();
     }
 
-
-    private double CalculatePackProbability(string pack, Dictionary<string, double[]> rarityRates, Dictionary<string, int> unownedByRarity, Dictionary<string, int> totalByRarity)
+    private double CalculatePackProbability(
+    Dictionary<string, double[]> rarityRates,
+    Dictionary<string, int> unownedByRarity,
+    Dictionary<string, int> totalByRarity)
     {
         double notNewCardProbability = 1.0;
 
-        // Slot probabilities: 1-3, 4th, 5th
-        var slots = new[] { 0, 1, 2 };
+        // Check if all cards are unowned
+        int totalUnownedCards = unownedByRarity.Values.Sum();
+        int totalCards = totalByRarity.Values.Sum();
 
-        foreach (var rarity in rarityRates.Keys)
+        if (totalUnownedCards == totalCards && totalCards > 0)
         {
-            var rates = rarityRates[rarity]; // Probabilities for 1-3, 4th, 5th slots
-            var unowned = unownedByRarity.ContainsKey(rarity) ? unownedByRarity[rarity] : 0;
-            var total = totalByRarity.ContainsKey(rarity) ? totalByRarity[rarity] : 1; // Avoid divide by zero
+            // If all cards are unowned, probability of opening a new card is 100%
+            return 1.0;
+        }
 
-            double chanceNewCard = unowned > 0 ? (double)unowned / total : 0;
-
-            for (int i = 0; i < slots.Length; i++)
+        // Calculate probability for slots 1-3 (shared odds)
+        for (int i = 0; i < 3; i++)
+        {
+            foreach (var rarity in rarityRates.Keys)
             {
-                double slotProbability = rates[i] * chanceNewCard;
+                var rate = rarityRates[rarity][0]; // Odds for slots 1-3 are at index 0
+                var unowned = unownedByRarity.ContainsKey(rarity) ? unownedByRarity[rarity] : 0;
+                var total = totalByRarity.ContainsKey(rarity) ? totalByRarity[rarity] : 1; // Avoid divide by zero
+
+                double chanceNewCard = unowned > 0 ? (double)unowned / total : 0;
+                double slotProbability = rate * chanceNewCard;
                 notNewCardProbability *= (1 - slotProbability);
             }
+        }
+
+        // Calculate probability for slot 4
+        foreach (var rarity in rarityRates.Keys)
+        {
+            var rate = rarityRates[rarity][1]; // Odds for slot 4 are at index 1
+            var unowned = unownedByRarity.ContainsKey(rarity) ? unownedByRarity[rarity] : 0;
+            var total = totalByRarity.ContainsKey(rarity) ? totalByRarity[rarity] : 1;
+
+            double chanceNewCard = unowned > 0 ? (double)unowned / total : 0;
+            double slotProbability = rate * chanceNewCard;
+            notNewCardProbability *= (1 - slotProbability);
+        }
+
+        // Calculate probability for slot 5
+        foreach (var rarity in rarityRates.Keys)
+        {
+            var rate = rarityRates[rarity][2]; // Odds for slot 5 are at index 2
+            var unowned = unownedByRarity.ContainsKey(rarity) ? unownedByRarity[rarity] : 0;
+            var total = totalByRarity.ContainsKey(rarity) ? totalByRarity[rarity] : 1;
+
+            double chanceNewCard = unowned > 0 ? (double)unowned / total : 0;
+            double slotProbability = rate * chanceNewCard;
+            notNewCardProbability *= (1 - slotProbability);
         }
 
         // Return probability of at least one new card in the pack
         return 1 - notNewCardProbability;
     }
 
-    private string GetBestPack(Dictionary<string, double[]> rarityRates, Dictionary<string, Dictionary<string, int>> unownedByPack, Dictionary<string, int> totalByRarity)
+
+    private string GetBestPack(
+    Dictionary<string, double[]> rarityRates,
+    Dictionary<string, Dictionary<string, int>> unownedByPack,
+    List<CardData> cardData,
+    string packType)
     {
+        // Check if no cards are owned across all packs
+        bool allCardsUnowned = unownedByPack.Values.Sum(pack => pack.Values.Sum()) == cardData.Count;
+
+        if (allCardsUnowned)
+        {
+            return $"Any Pack<br>100% chance to open a new card!";
+        }
+
         string bestPack = null;
+        string secondBestPack = null;
         double bestProbability = 0;
+        double secondBestProbability = 0;
 
         foreach (var pack in unownedByPack.Keys)
         {
-            var unownedByRarity = unownedByPack[pack];
-            double probability = CalculatePackProbability(pack, rarityRates, unownedByRarity, totalByRarity);
+            // Skip "All" and "Kanto" packs for the best-pack logic (we handle them separately)
+            if (pack == "All" || pack == "Kanto")
+            {
+                continue;
+            }
+
+            // Filter card data for this specific pack
+            var cardDataForPack = cardData
+                .Where(card => card.Pack == pack || card.Pack == "All" || (packType == "KantoMew" && card.Pack == "Kanto"))
+                .ToList();
+
+            // Dynamically compute totalByRarity for this pack
+            var totalByRarityForPack = cardDataForPack
+                .GroupBy(card => card.Rarity)
+                .ToDictionary(group => group.Key, group => group.Count());
+
+            // Combine unowned cards for the specific pack, "All" pack, and (if applicable) "Kanto"
+            var unownedByRarity = new Dictionary<string, int>(unownedByPack[pack]);
+
+            if (unownedByPack.ContainsKey("All"))
+            {
+                foreach (var rarity in unownedByPack["All"].Keys)
+                {
+                    if (!unownedByRarity.ContainsKey(rarity))
+                    {
+                        unownedByRarity[rarity] = 0;
+                    }
+                    unownedByRarity[rarity] += unownedByPack["All"].GetValueOrDefault(rarity, 0);
+                }
+            }
+
+            if (packType == "KantoMew" && unownedByPack.ContainsKey("Kanto"))
+            {
+                foreach (var rarity in unownedByPack["Kanto"].Keys)
+                {
+                    if (!unownedByRarity.ContainsKey(rarity))
+                    {
+                        unownedByRarity[rarity] = 0;
+                    }
+                    unownedByRarity[rarity] += unownedByPack["Kanto"].GetValueOrDefault(rarity, 0);
+                }
+            }
+
+            double probability = CalculatePackProbability(rarityRates, unownedByRarity, totalByRarityForPack);
 
             if (probability > bestProbability)
             {
+                secondBestProbability = bestProbability;
+                secondBestPack = bestPack;
+
                 bestProbability = probability;
                 bestPack = pack;
             }
+            else if (probability > secondBestProbability)
+            {
+                secondBestProbability = probability;
+                secondBestPack = pack;
+            }
         }
 
-        return $"{bestPack} Pack<br>({(bestProbability * 100):F2}% chance to open a new card!)";
+        // If the best pack is "All" or "Kanto," suggest the second-best pack
+        if (bestPack == "All" || bestPack == "Kanto")
+        {
+            return $"{secondBestPack} Pack<br>{(secondBestProbability * 100):F2}% chance to open a new card";
+        }
+
+        // Return the best pack's name and probability
+        if (packType == "GeneticApex")
+        {
+            return $"{bestPack} Pack<br>{(bestProbability * 100):F2}% chance to open a new card";
+        }
+        else
+        {
+            return $"{bestPack} Pack<br>{(bestProbability * 100):F2}% chance to open a new Kanto card (for Mew)";
+        }
     }
 
     private void SelectAll()
@@ -518,7 +665,9 @@
 
     private void UpdateGridSize(string size)
     {
-        CurrentGridClass = $"grid-{size}"; // Dynamically update the grid class
+        CurrentGridClass = $"grid-{size}";
+        OverlayClass = $"overlay-{size}";
+
         StateHasChanged(); // Trigger UI update
     }
 

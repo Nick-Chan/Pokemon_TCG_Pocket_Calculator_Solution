@@ -118,17 +118,51 @@ a, .btn-link {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    font-size: 1.5em;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
     text-align: center;
     pointer-events: none;
+    border-radius: 5px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.overlay-small {
+    width: 90%;
+    height: 90%;
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+.overlay-medium {
+    width: 85%;
+    height: 85%;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.overlay-large {
+    width: 80%;
+    height: 80%;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.overlay p {
+    margin: 5px 0;
+}
+
+
 .card-id {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.card-name {
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 h3, h4 {
@@ -218,4 +252,10 @@ ul {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
