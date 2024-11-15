@@ -4,7 +4,7 @@
 
 <div class="suggested-packs-frame">
     <div class="suggested-packs">
-        
+
         @if (HasCalculated)
         {
             <h3>Best pack to open:</h3>
@@ -21,7 +21,7 @@
             }
 
             <div class="toggle-container">
-                    <button class="toggle-button" @onclick="ToggleCalculation">
+                <button class="toggle-button" @onclick="ToggleCalculation">
                     @(ShowBestPack ? "Switch to best pack for Kanto cards" : "Switch to best pack for any card")
                 </button>
             </div>
