@@ -16,4 +16,11 @@
     <Folder Include="wwwroot\images\packs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\data\A1a.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

@@ -88,25 +88,51 @@
     </div>
 </div>
 
-<h3>Genetic Apex (A1) Collection</h3>
-
-<div class="cards-grid @CurrentGridClass">
-    @foreach (var card in Cards)
-    {
-        <div class="card" @onclick="() => ToggleCardOwnership(card)">
-            <div class="card-container">
-                <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
-                @if (!card.IsOwned)
-                {
-                    <div class="overlay @OverlayClass">
-                        <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
-                        <p class="card-name">@CardDataFromJson.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
-                    </div>
-                }
-            </div>
-        </div>
-    }
+<div class="tab-container">
+    <button class="tab-button @(GetTabClass("GeneticApex"))" @onclick="@(e => SwitchCollection("GeneticApex"))">Genetic Apex (A1)</button>
+    <button class="tab-button @(GetTabClass("MythicalIsland"))" @onclick="@(e => SwitchCollection("MythicalIsland"))">Mythical Island (A1a)</button>
 </div>
+
+@if (ActiveCollection == "GeneticApex")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in Cards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@CardDataFromJson.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (ActiveCollection == "MythicalIsland")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in MythicalIslandCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@MythicalIslandCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
 
 @code {
     private string CurrentGridClass { get; set; } = "grid-medium";
@@ -116,6 +142,9 @@
     private Dictionary<string, bool> PackDetails = new();
     private Dictionary<string, List<string>> PackCardDetails = new();
     private List<CardData> CardDataFromJson = new();
+
+    private List<Models.Card> MythicalIslandCards = new();
+    private List<CardData> MythicalIslandCardData = new();
 
     private bool HasCalculated { get; set; } = false;
     private bool ShowKantoMewDetails { get; set; } = false;
@@ -141,12 +170,32 @@
     [CascadingParameter]
     private MainLayout MainLayout { get; set; }
 
+    private string ActiveCollection { get; set; } = "GeneticApex";
+
+
+    private void SwitchCollection(string collectionName)
+    {
+        ActiveCollection = collectionName;
+        StateHasChanged();
+    }
+
+    private string GetTabClass(string collection)
+    {
+        return ActiveCollection == collection ? "active" : string.Empty;
+    }
+
     protected override async Task OnInitializedAsync()
     {
-        // Initialize 286 cards
+        // Load Genetic Apex (A1) Collection
         for (int i = 1; i <= 286; i++)
         {
             Cards.Add(new Models.Card { Id = i, CardName = $"Card {i}", DisplayName = $"A1 {i:D3}" });
+        }
+
+        // Load Mythical Island (A1a) Collection
+        for (int i = 1; i <= 86; i++)
+        {
+            MythicalIslandCards.Add(new Models.Card { Id = i + 286, CardName = $"Card {i}", DisplayName = $"A1a {i:D3}" });
         }
 
         MainLayout.GridSizeChanged += UpdateGridSize; // Subscribe to grid size changes
@@ -179,8 +228,11 @@
         MainLayout.CalculatePacksTriggered += CalculatePacks;
 
         // Load JSON data
-        var json = await Http.GetStringAsync("data/A1.json");
-        CardDataFromJson = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(json);
+        var geneticApexJson = await Http.GetStringAsync("data/A1.json");
+        CardDataFromJson = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(geneticApexJson);
+
+        var mythicalIslandJson = await Http.GetStringAsync("data/A1a.json");
+        MythicalIslandCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(mythicalIslandJson);
     }
 
     private void TogglePackDetails(string pack)
