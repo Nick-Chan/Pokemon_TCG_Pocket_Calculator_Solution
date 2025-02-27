@@ -1,14 +1,14 @@
 # Pokémon TCG Pocket Calculator (Solution)
 
-A web-based tool to help Pokémon TCG Pocket players to select the best booster packs to open based on their collection. The tool calculates the probability of obtaining new cards and suggests the most optimal packs to open.
+A web-based tool to help Pokémon TCG Pocket players to select the best booster packs to open based on their collection. The tool calculates the probability of obtaining new cards and suggests the most optimal packs to open. Includes cards reliant on certain conditions, e.g. Mew (Genetic Apex). Excludes non-pack uniques and promotional event cards.
 
-Current expansions updated for are: 
+Current expansions updated: 
 
-Genetic Apex (A1)
+- Genetic Apex (A1)
 
-Mythical Island (A1a)
+- Mythical Island (A1a)
 
-pace-Time Smackdown (A2)
+- Space-Time Smackdown (A2)
 
 ---
 
