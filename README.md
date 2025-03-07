@@ -9,7 +9,11 @@ Current expansions updated:
 - Mythical Island (A1a)
 
 - Space-Time Smackdown (A2)
+  
+To be implemented:
 
+- Triumphant Light (A2a)
+  
 ---
 
 ## Links 
