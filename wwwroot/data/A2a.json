@@ -1,0 +1,578 @@
+﻿[
+  {
+    "CardID": "A2a 001",
+    "CardName": "Heracross",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 002",
+    "CardName": "Burmy",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 003",
+    "CardName": "Mothim",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 004",
+    "CardName": "Combee",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 005",
+    "CardName": "Vespiquen",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 006",
+    "CardName": "Cherubi",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 007",
+    "CardName": "Cherrim",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 008",
+    "CardName": "Cherrim",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 009",
+    "CardName": "Carnivine",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 010",
+    "CardName": "Leafeon ex",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2a 011",
+    "CardName": "Houndour",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 012",
+    "CardName": "Houndoom",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 013",
+    "CardName": "Heatran",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 014",
+    "CardName": "Marill",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 015",
+    "CardName": "Azumarill",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 016",
+    "CardName": "Barboach",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 017",
+    "CardName": "Whiscash",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 018",
+    "CardName": "Snorunt",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 019",
+    "CardName": "Froslass",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 020",
+    "CardName": "Snover",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 021",
+    "CardName": "Abomasnow",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 022",
+    "CardName": "Glaceon ex",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2a 023",
+    "CardName": "Palkia (Origin Forme)",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 024",
+    "CardName": "Phione",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 025",
+    "CardName": "Pikachu",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 026",
+    "CardName": "Raichu",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 027",
+    "CardName": "Electrike",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 028",
+    "CardName": "Manectric",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 029",
+    "CardName": "Clefairy",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 030",
+    "CardName": "Clefable",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 031",
+    "CardName": "Ghastly",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 032",
+    "CardName": "Haunter",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 033",
+    "CardName": "Gengar",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 034",
+    "CardName": "Unown",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 035",
+    "CardName": "Rotom",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 036",
+    "CardName": "Sudowoodo",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 037",
+    "CardName": "Phanpy",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 038",
+    "CardName": "Donphan",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 039",
+    "CardName": "Larvitar",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 040",
+    "CardName": "Pupitar",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 041",
+    "CardName": "Tyranitar",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 042",
+    "CardName": "Nosepass",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 043",
+    "CardName": "Meditite",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 044",
+    "CardName": "Medicham",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 045",
+    "CardName": "Gible",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 046",
+    "CardName": "Gabite",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 047",
+    "CardName": "Garchomp ex",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2a 048",
+    "CardName": "Zubar",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 049",
+    "CardName": "Golbat",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 050",
+    "CardName": "Crobat",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 051",
+    "CardName": "Croagunk",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 052",
+    "CardName": "Toxicroak",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 053",
+    "CardName": "Magnemite",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 054",
+    "CardName": "Magneton",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 055",
+    "CardName": "Magnezone",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 056",
+    "CardName": "Mawile",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 057",
+    "CardName": "Probopass ex",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2a 058",
+    "CardName": "Bronzor",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 059",
+    "CardName": "Bronzong",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 060",
+    "CardName": "Dialga (Origin Forme)",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 061",
+    "CardName": "Giratina",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 062",
+    "CardName": "Eevee",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 063",
+    "CardName": "Snorlax",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 064",
+    "CardName": "Hoothoot",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 065",
+    "CardName": "Noctowl",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 066",
+    "CardName": "Starly",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 067",
+    "CardName": "Staravia",
+    "Pack": "Arceus",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2a 068",
+    "CardName": "Staraptor",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 069",
+    "CardName": "Shaymin",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 070",
+    "CardName": "Arceus",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2a 071",
+    "CardName": "Arceus ex",
+    "Pack": "Arceus",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2a 072",
+    "CardName": "Irida",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 073",
+    "CardName": "Celestic Town Elder",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 074",
+    "CardName": "Barry",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 075",
+    "CardName": "Adaman",
+    "Pack": "Arceus",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2a 076",
+    "CardName": "Houndoom",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 077",
+    "CardName": "Marill",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 078",
+    "CardName": "Unown",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 079",
+    "CardName": "Sudowoodo",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 080",
+    "CardName": "Magnemite",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 081",
+    "CardName": "Shaymin",
+    "Pack": "Arceus",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2a 082",
+    "CardName": "Leafeon ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 083",
+    "CardName": "Glaceon ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 084",
+    "CardName": "Garchomp ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 085",
+    "CardName": "Probopass ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 086",
+    "CardName": "Arceus ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 087",
+    "CardName": "Irida",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 088",
+    "CardName": "Celestic Town Elder",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 089",
+    "CardName": "Barry",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 090",
+    "CardName": "Adaman",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 091",
+    "CardName": "Leafeon ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 092",
+    "CardName": "Glaceon ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 093",
+    "CardName": "Garchomp ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 094",
+    "CardName": "Probopass ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2a 095",
+    "CardName": "Arceus ex",
+    "Pack": "Arceus",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A2a 096",
+    "CardName": "Arceus ex",
+    "Pack": "Arceus",
+    "Rarity": "♛"
+  }
+]

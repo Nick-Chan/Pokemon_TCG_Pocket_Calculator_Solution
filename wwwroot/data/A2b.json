@@ -1,0 +1,668 @@
+﻿[
+  {
+    "CardID": "A2b 001",
+    "CardName": "Weedle",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 002",
+    "CardName": "Kakuna",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 003",
+    "CardName": "Beedrill ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 004",
+    "CardName": "Pinsir",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 005",
+    "CardName": "Sprigatito",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 006",
+    "CardName": "Froragato",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 007",
+    "CardName": "Meowscarada",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 008",
+    "CardName": "Charmander",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 009",
+    "CardName": "Charmeleon",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 010",
+    "CardName": "Charizard ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 011",
+    "CardName": "Magmar",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 012",
+    "CardName": "Magmortar",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 013",
+    "CardName": "Paldean Tauros",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 014",
+    "CardName": "Tentacool",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 015",
+    "CardName": "Tentatruel",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 016",
+    "CardName": "Buizel",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 017",
+    "CardName": "Floatzel",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 018",
+    "CardName": "Wiglett",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 019",
+    "CardName": "Wugtrio ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 020",
+    "CardName": "Dondozo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 021",
+    "CardName": "Tatsugiri",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 022",
+    "CardName": "Pikachu ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 023",
+    "CardName": "Voltorb",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 024",
+    "CardName": "Electrode",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 025",
+    "CardName": "Pachirisu",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 026",
+    "CardName": "Pawmi",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 027",
+    "CardName": "Pawmo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 028",
+    "CardName": "Pawmot",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 029",
+    "CardName": "Abra",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 030",
+    "CardName": "Kadabra",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 031",
+    "CardName": "Alakazam",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 032",
+    "CardName": "Mr. Mime",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 033",
+    "CardName": "Drifloon",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 034",
+    "CardName": "Drifblim",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 035",
+    "CardName": "Giratina ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 036",
+    "CardName": "Gimmighoul",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 037",
+    "CardName": "Machop",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 038",
+    "CardName": "Machoke",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 039",
+    "CardName": "Machamp",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 040",
+    "CardName": "Hitmonlee",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 041",
+    "CardName": "Hitmonchan",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 042",
+    "CardName": "Riolu",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 043",
+    "CardName": "Lucario ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 044",
+    "CardName": "Flamigo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 045",
+    "CardName": "Ekans",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 046",
+    "CardName": "Arbok",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 047",
+    "CardName": "Paldean Wooper",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 048",
+    "CardName": "Paldean Clodsire ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 049",
+    "CardName": "Spiritomb",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 050",
+    "CardName": "Shroodle",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 051",
+    "CardName": "Grafaiai",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 052",
+    "CardName": "Tinkatink",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 053",
+    "CardName": "Tinkatuff",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 054",
+    "CardName": "Tinkaton ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 055",
+    "CardName": "Varoom",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 056",
+    "CardName": "Revavroom",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 057",
+    "CardName": "Gholdengo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 058",
+    "CardName": "Rattata",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 059",
+    "CardName": "Raticate",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 060",
+    "CardName": "Jigglypuff",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 061",
+    "CardName": "Wigglytuff",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2b 062",
+    "CardName": "Lickitung",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 063",
+    "CardName": "Lickilicky",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 064",
+    "CardName": "Bidoof",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 065",
+    "CardName": "Bibarel ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2b 066",
+    "CardName": "Buneary",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 067",
+    "CardName": "Lopunny",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2b 068",
+    "CardName": "Cyclizar",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 069",
+    "CardName": "Iono",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 070",
+    "CardName": "Pokèmon Center Lady",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 071",
+    "CardName": "Red",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 072",
+    "CardName": "Team Rocket Grunt",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2b 073",
+    "CardName": "Meowscarada",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 074",
+    "CardName": "Buizel",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 075",
+    "CardName": "Tatsugiri",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 076",
+    "CardName": "Grafaiai",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 077",
+    "CardName": "Gholdengo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 078",
+    "CardName": "Wigglytuff",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2b 079",
+    "CardName": "Beedrill ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 080",
+    "CardName": "Charizard ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 081",
+    "CardName": "Wugtrio ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 082",
+    "CardName": "Pikachu ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 083",
+    "CardName": "Giratina ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 084",
+    "CardName": "Lucario ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 085",
+    "CardName": "Paldean Clodsire ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 086",
+    "CardName": "Tinkaton ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 087",
+    "CardName": "Bibarel ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 088",
+    "CardName": "Iono",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 089",
+    "CardName": "Pokèmon Center Lady",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 090",
+    "CardName": "Red",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 091",
+    "CardName": "Team Rocket Grunt",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 092",
+    "CardName": "Pikachu ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 093",
+    "CardName": "Paldean Clodsire ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 094",
+    "CardName": "Tinkaton ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 095",
+    "CardName": "Bibarel ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2b 096",
+    "CardName": "Giratina ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A2b 097",
+    "CardName": "Weedle",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 098",
+    "CardName": "Kakuna",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 099",
+    "CardName": "Charmander",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 100",
+    "CardName": "Charmeleon",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 101",
+    "CardName": "Wiglett",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 102",
+    "CardName": "Dondozo",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 103",
+    "CardName": "Pachirisu",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 104",
+    "CardName": "Riolu",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 105",
+    "CardName": "Varoom",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 106",
+    "CardName": "Revavroom",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A2b 107",
+    "CardName": "Beedrill ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A2b 108",
+    "CardName": "Charizard ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A2b 109",
+    "CardName": "Wugtrio ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A2b 110",
+    "CardName": "Lucario ex",
+    "Pack": "Shiny Charizard",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A2b 111",
+    "CardName": "Poke Ball",
+    "Pack": "Shiny Charizard",
+    "Rarity": "♛"
+  }
+]

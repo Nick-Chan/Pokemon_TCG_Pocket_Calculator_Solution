@@ -1,0 +1,1244 @@
+﻿[
+  {
+    "CardID": "A2 001",
+    "CardName": "Oddish",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 002",
+    "CardName": "Gloom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 003",
+    "CardName": "Bellossom",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 004",
+    "CardName": "Tangela",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 005",
+    "CardName": "Tangrowth",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 006",
+    "CardName": "Yanma",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 007",
+    "CardName": "Yanmega ex",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 008",
+    "CardName": "Roselia",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 009",
+    "CardName": "Roserade",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 010",
+    "CardName": "Turtwig",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 011",
+    "CardName": "Grotle",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 012",
+    "CardName": "Torterra",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 013",
+    "CardName": "Kricketot",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 014",
+    "CardName": "Kricketune",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 015",
+    "CardName": "Burmy",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 016",
+    "CardName": "Wormadam",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 017",
+    "CardName": "Combee",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 018",
+    "CardName": "Vespiqueen",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 019",
+    "CardName": "Carnivine",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 020",
+    "CardName": "Leafeon",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 021",
+    "CardName": "Mow Rotom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 022",
+    "CardName": "Shaymin",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 023",
+    "CardName": "Magmar",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 024",
+    "CardName": "Magmortar",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 025",
+    "CardName": "Slugma",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 026",
+    "CardName": "Magcargo",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 027",
+    "CardName": "Chimchar",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 028",
+    "CardName": "Monferno",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 029",
+    "CardName": "Infernape ex",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 030",
+    "CardName": "Heat Rotom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 031",
+    "CardName": "Swinub",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 032",
+    "CardName": "Piloswine",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 033",
+    "CardName": "Mamoswine",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 034",
+    "CardName": "Regice",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 035",
+    "CardName": "Piplup",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 036",
+    "CardName": "Prinplup",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 037",
+    "CardName": "Empoleon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 038",
+    "CardName": "Buizel",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 039",
+    "CardName": "Floatzel",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 040",
+    "CardName": "Shellos",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 041",
+    "CardName": "Gastrodon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 042",
+    "CardName": "Finneon",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 043",
+    "CardName": "Lumineon",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 044",
+    "CardName": "Snover",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 045",
+    "CardName": "Abomasnow",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 046",
+    "CardName": "Glaceon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 047",
+    "CardName": "Wash Rotom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 048",
+    "CardName": "Frost Rotom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 049",
+    "CardName": "Palkia ex",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 050",
+    "CardName": "Manaphy",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 051",
+    "CardName": "Magnemite",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 052",
+    "CardName": "Magneton",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 053",
+    "CardName": "Magnezon",
+    "Pack": "All",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 054",
+    "CardName": "Voltorb",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 055",
+    "CardName": "Electrode",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 056",
+    "CardName": "Electabuzz",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 057",
+    "CardName": "Electivire",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 058",
+    "CardName": "Shinx",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 059",
+    "CardName": "Luxio",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 060",
+    "CardName": "Luxray",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 061",
+    "CardName": "Pachirisu ex",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 062",
+    "CardName": "Rotom",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 063",
+    "CardName": "Togepi",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 064",
+    "CardName": "Togetic",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 065",
+    "CardName": "Togekiss",
+    "Pack": "All",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 066",
+    "CardName": "Misdreavus",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 067",
+    "CardName": "Mismagius ex",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 068",
+    "CardName": "Ralts",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 069",
+    "CardName": "Kirlia",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 070",
+    "CardName": "Duskull",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 071",
+    "CardName": "Dusclops",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 072",
+    "CardName": "Dusknoir",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 073",
+    "CardName": "Drifloon",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 074",
+    "CardName": "Drifblim",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 075",
+    "CardName": "Uxie",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 076",
+    "CardName": "Mesprit",
+    "Pack": "All",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 077",
+    "CardName": "Azlef",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 078",
+    "CardName": "Giratina",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 079",
+    "CardName": "Cresselia",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 080",
+    "CardName": "Rhyhorn",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 081",
+    "CardName": "Rhydon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 082",
+    "CardName": "Rhyperior",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 083",
+    "CardName": "Gligar",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 084",
+    "CardName": "Gliscor",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 085",
+    "CardName": "Hitmontop",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 086",
+    "CardName": "Nosepass",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 087",
+    "CardName": "Regirock",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 088",
+    "CardName": "Cranidos",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 089",
+    "CardName": "Rampardos",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 090",
+    "CardName": "Wormadam",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 091",
+    "CardName": "Riolu",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 092",
+    "CardName": "Lucario",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 093",
+    "CardName": "Hippopotas",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 094",
+    "CardName": "Hippowdon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 095",
+    "CardName": "Gallade ex",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 096",
+    "CardName": "Murkrow",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 097",
+    "CardName": "Honchkrow",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 098",
+    "CardName": "Sneasel",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 099",
+    "CardName": "Weavile ex",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 100",
+    "CardName": "Poochyena",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 101",
+    "CardName": "Mightyena",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 102",
+    "CardName": "Stunky",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 103",
+    "CardName": "Skuntank",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 104",
+    "CardName": "Spiritomb",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 105",
+    "CardName": "Skorupi",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 106",
+    "CardName": "Drapion",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 107",
+    "CardName": "Croagunk",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 108",
+    "CardName": "Toxicroak",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 109",
+    "CardName": "Darkrai",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 110",
+    "CardName": "Darkrai ex",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 111",
+    "CardName": "Skarmory",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 112",
+    "CardName": "Registeel",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 113",
+    "CardName": "Shieldon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 114",
+    "CardName": "Bastiodon",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 115",
+    "CardName": "Wormadam",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 116",
+    "CardName": "Bronzor",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 117",
+    "CardName": "Bronzong",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 118",
+    "CardName": "Probopass",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 119",
+    "CardName": "Dialga ex",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 120",
+    "CardName": "Heatran",
+    "Pack": "Dialga",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 121",
+    "CardName": "Gible",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 122",
+    "CardName": "Gabite",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 123",
+    "CardName": "Garchomp",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 124",
+    "CardName": "Lickitung",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 125",
+    "CardName": "Lickilicky ex",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A2 126",
+    "CardName": "Eevee",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 127",
+    "CardName": "Porygon",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 128",
+    "CardName": "Porygon 2",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 129",
+    "CardName": "Porygon-Z",
+    "Pack": "Palkia",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 130",
+    "CardName": "Aipom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 131",
+    "CardName": "Ambipom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 132",
+    "CardName": "Starly",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 133",
+    "CardName": "Staravia",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 134",
+    "CardName": "Staraptor",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 135",
+    "CardName": "Bidoof",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 136",
+    "CardName": "Bibarel",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 137",
+    "CardName": "Burneary",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 138",
+    "CardName": "Lopunny",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 139",
+    "CardName": "Glameow",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 140",
+    "CardName": "Purugly",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 141",
+    "CardName": "Chatot",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 142",
+    "CardName": "Fan Rotom",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 143",
+    "CardName": "Regigigas",
+    "Pack": "All",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A2 144",
+    "CardName": "Skull Fossil",
+    "Pack": "Dialga",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 145",
+    "CardName": "Armor Fossil",
+    "Pack": "Palkia",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A2 146",
+    "CardName": "Pokemon Communication",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 147",
+    "CardName": "Giant Cape",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 148",
+    "CardName": "Rocky Helmet",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 149",
+    "CardName": "Lum Berry",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 150",
+    "CardName": "Cyrus",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 151",
+    "CardName": "Team Galactic Grunt",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 152",
+    "CardName": "Cynthia",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 153",
+    "CardName": "Volkner",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 154",
+    "CardName": "Dawn",
+    "Pack": "Dialga",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 155",
+    "CardName": "Mars",
+    "Pack": "Palkia",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A2 156",
+    "CardName": "Tangrowth",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 157",
+    "CardName": "Combee",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 158",
+    "CardName": "Carnivine",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 159",
+    "CardName": "Shaymin",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 160",
+    "CardName": "Mamoswine",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 161",
+    "CardName": "Gastrodon",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 162",
+    "CardName": "Manaphy",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 163",
+    "CardName": "Shinx",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 164",
+    "CardName": "Rotom",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 165",
+    "CardName": "Drifloon",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 166",
+    "CardName": "Mesprit",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 167",
+    "CardName": "Giratina",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 168",
+    "CardName": "Cresselia",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 169",
+    "CardName": "Rhyperior",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 170",
+    "CardName": "Lucario",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 171",
+    "CardName": "Hippopotas",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 172",
+    "CardName": "Spiritomb",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 173",
+    "CardName": "Croagunk",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 174",
+    "CardName": "Heatran",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 175",
+    "CardName": "Garchomp",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 176",
+    "CardName": "Staraptor",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 177",
+    "CardName": "Bidoof",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 178",
+    "CardName": "Glameow",
+    "Pack": "Palkia",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 179",
+    "CardName": "Regigigas",
+    "Pack": "Dialga",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A2 180",
+    "CardName": "Yanmega ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 181",
+    "CardName": "Infernape ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 182",
+    "CardName": "Palkia ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 183",
+    "CardName": "Pachirisu ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 184",
+    "CardName": "Mismagius ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 185",
+    "CardName": "Gallade ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 186",
+    "CardName": "Weavile ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 187",
+    "CardName": "Darkrai ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 188",
+    "CardName": "Dialga ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 189",
+    "CardName": "Lickilicky ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 190",
+    "CardName": "Cyrus",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 191",
+    "CardName": "Team Galactic Grunt",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 192",
+    "CardName": "Cynthia",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 193",
+    "CardName": "Volkner",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 194",
+    "CardName": "Dawn",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 195",
+    "CardName": "Mars",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 196",
+    "CardName": "Yanmega ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 197",
+    "CardName": "Infernape ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 198",
+    "CardName": "Pachirisu ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 199",
+    "CardName": "Mismagius ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 200",
+    "CardName": "Gallade ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 201",
+    "CardName": "Weavile ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 202",
+    "CardName": "Darkrai ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 203",
+    "CardName": "Lickilicky ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A2 204",
+    "CardName": "Palkia ex",
+    "Pack": "Palkia",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A2 205",
+    "CardName": "Dialga ex",
+    "Pack": "Dialga",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A2 206",
+    "CardName": "Palkia ex",
+    "Pack": "All",
+    "Rarity": "♛"
+  },
+  {
+    "CardID": "A2 207",
+    "CardName": "Dialga ex",
+    "Pack": "All",
+    "Rarity": "♛"
+  }
+]

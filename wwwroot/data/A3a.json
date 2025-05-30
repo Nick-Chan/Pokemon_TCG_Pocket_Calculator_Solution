@@ -1,0 +1,620 @@
+﻿[
+  {
+    "CardID": "A3a 001",
+    "CardName": "Petilil",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 002",
+    "CardName": "Lilligant",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 003",
+    "CardName": "Rowlet",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 004",
+    "CardName": "Dartrix",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 005",
+    "CardName": "Decidueye",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 006",
+    "CardName": "Buzzwole ex",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3a 007",
+    "CardName": "Pheromosa",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 008",
+    "CardName": "Kartana",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 009",
+    "CardName": "Blacephalon",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 010",
+    "CardName": "Mantine",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 011",
+    "CardName": "Carvanha",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 012",
+    "CardName": "Sharpedo",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 013",
+    "CardName": "Shink",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 014",
+    "CardName": "Luxio",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 015",
+    "CardName": "Luxray",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 016",
+    "CardName": "Blitzle",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 017",
+    "CardName": "Zebstrika",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 018",
+    "CardName": "Emolga",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 019",
+    "CardName": "Tapu Koko ex",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3a 020",
+    "CardName": "Xurkitree",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 021",
+    "CardName": "Zeraora",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 022",
+    "CardName": "Clefairy",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 023",
+    "CardName": "Clefable",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 024",
+    "CardName": "Phantump",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 025",
+    "CardName": "Trevenant",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 026",
+    "CardName": "Morelull",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 027",
+    "CardName": "Shiinotic",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 028",
+    "CardName": "Meditite",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 029",
+    "CardName": "Medicham",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 030",
+    "CardName": "Baltoy",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 031",
+    "CardName": "Claydol",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 032",
+    "CardName": "Rockruff",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 033",
+    "CardName": "Lycanroc ex",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3a 034",
+    "CardName": "Passimian",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 035",
+    "CardName": "Sandygast",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 036",
+    "CardName": "Palossand",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 037",
+    "CardName": "Alolan Meowth",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 038",
+    "CardName": "Alolan Persian",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 039",
+    "CardName": "Sandile",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 040",
+    "CardName": "Krokorok",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 041",
+    "CardName": "Krookodile",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 042",
+    "CardName": "Nihilego",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 043",
+    "CardName": "Guzzlord ex",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3a 044",
+    "CardName": "Poipole",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 045",
+    "CardName": "Naganadel",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 046",
+    "CardName": "Alolan Diglett",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 047",
+    "CardName": "Alolan Dugtrio ex",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3a 048",
+    "CardName": "Aron",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 049",
+    "CardName": "Lairon",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 050",
+    "CardName": "Aggron",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 051",
+    "CardName": "Ferroseed",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 052",
+    "CardName": "Ferrothorn",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 053",
+    "CardName": "Stakataka",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 054",
+    "CardName": "Lillipup",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 055",
+    "CardName": "Herdier",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 056",
+    "CardName": "Stoutland",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 057",
+    "CardName": "Stufful",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 058",
+    "CardName": "Bewear",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 059",
+    "CardName": "Oranguru",
+    "Pack": "Buzzwole",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3a 060",
+    "CardName": "Type: Null",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 061",
+    "CardName": "Silvally",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 062",
+    "CardName": "Celesteela",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3a 063",
+    "CardName": "Beast Wall",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 064",
+    "CardName": "Repel",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 065",
+    "CardName": "Electric Cord",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 066",
+    "CardName": "Beastite",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 067",
+    "CardName": "Gladion",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 068",
+    "CardName": "Looker",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 069",
+    "CardName": "Lusamine",
+    "Pack": "Buzzwole",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3a 070",
+    "CardName": "Rowlet",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 071",
+    "CardName": "Pheromosa",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 072",
+    "CardName": "Blacephalon",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 073",
+    "CardName": "Alolan Meowth",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 074",
+    "CardName": "Silvally",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 075",
+    "CardName": "Celesteela",
+    "Pack": "Buzzwole",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3a 076",
+    "CardName": "Buzzwole ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 077",
+    "CardName": "Tapu Koko ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 078",
+    "CardName": "Lycanroc ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 079",
+    "CardName": "Guzzlord ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 080",
+    "CardName": "Alolan Dugtrio ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 081",
+    "CardName": "Gladion",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 082",
+    "CardName": "Looker",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 083",
+    "CardName": "Lusamine",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 084",
+    "CardName": "Tapu Koko ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 085",
+    "CardName": "Lycanroc ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 086",
+    "CardName": "Guzzlord ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 087",
+    "CardName": "Alolan Dugtrio ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3a 088",
+    "CardName": "Buzzwole ex",
+    "Pack": "Buzzwole",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A3a 089",
+    "CardName": "Growlithe",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 090",
+    "CardName": "Arcanine",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 091",
+    "CardName": "Froakie",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 092",
+    "CardName": "Frogadier",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 093",
+    "CardName": "Greninja",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 094",
+    "CardName": "Jynx",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 095",
+    "CardName": "Pidgey",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 096",
+    "CardName": "Pidgeotto",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 097",
+    "CardName": "Pidgeotto",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 098",
+    "CardName": "Aerodactyl",
+    "Pack": "Buzzwole",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3a 099",
+    "CardName": "Celebi ex",
+    "Pack": "Buzzwole",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3a 100",
+    "CardName": "Arcanine ex",
+    "Pack": "Buzzwole",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3a 101",
+    "CardName": "Aerodactyl ex",
+    "Pack": "Buzzwole",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3a 102",
+    "CardName": "Pidgeot ex",
+    "Pack": "Buzzwole",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3a 103",
+    "CardName": "Nihilego",
+    "Pack": "Buzzwole",
+    "Rarity": "♛"
+  }
+]
