@@ -91,6 +91,11 @@
 <div class="tab-container">
     <button class="tab-button @(GetTabClass("GeneticApex"))" @onclick="@(e => SwitchCollection("GeneticApex"))">Genetic Apex (A1)</button>
     <button class="tab-button @(GetTabClass("MythicalIsland"))" @onclick="@(e => SwitchCollection("MythicalIsland"))">Mythical Island (A1a)</button>
+    <button class="tab-button @(GetTabClass("SpaceTimeSmackdown"))" @onclick="@(e => SwitchCollection("SpaceTimeSmackdown"))">Space-Time Smackdown (A2)</button>
+    <button class="tab-button @(GetTabClass("TriumphantLight"))" @onclick="@(e => SwitchCollection("TriumphantLight"))">Triumphant Light (A2a)</button>
+    <button class="tab-button @(GetTabClass("ShiningRevelry"))" @onclick="@(e => SwitchCollection("ShiningRevelry"))">Shining Revelry (A2b)</button>
+    <button class="tab-button @(GetTabClass("CelestialGuardians"))" @onclick="@(e => SwitchCollection("CelestialGuardians"))">Celestial Guardians (A3)</button>
+    <button class="tab-button @(GetTabClass("ExtradimensionalCrisis"))" @onclick="@(e => SwitchCollection("ExtradimensionalCrisis"))">Extradimensional Crisis (A3a)</button>
 </div>
 
 @if (ActiveCollection == "GeneticApex")
@@ -133,6 +138,106 @@ else if (ActiveCollection == "MythicalIsland")
         }
     </div>
 }
+else if (ActiveCollection == "SpaceTimeSmackdown")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in SpaceTimeSmackdownCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@SpaceTimeSmackdownCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (ActiveCollection == "TriumphantLight")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in TriumphantLightCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@TriumphantLightCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (ActiveCollection == "ShiningRevelry")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in ShiningRevelryCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@ShiningRevelryCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (ActiveCollection == "CelestialGuardians")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in CelestialGuardiansCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@CelestialGuardiansCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (ActiveCollection == "ExtradimensionalCrisis")
+{
+    <div class="cards-grid @CurrentGridClass">
+        @foreach (var card in ExtradimensionalCrisisCards)
+        {
+            <div class="card" @onclick="() => ToggleCardOwnership(card)">
+                <div class="card-container">
+                    <img src="@GetCardImage(card)" alt="@card.DisplayName" class="card-image" />
+                    @if (!card.IsOwned)
+                    {
+                        <div class="overlay @OverlayClass">
+                            <p class="card-id">@card.DisplayName.Split(' ')[1]</p>
+                            <p class="card-name">@ExtradimensionalCrisisCardData.FirstOrDefault(data => data.CardID == card.DisplayName)?.CardName</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
 
 @code {
     private string CurrentGridClass { get; set; } = "grid-medium";
@@ -145,6 +250,21 @@ else if (ActiveCollection == "MythicalIsland")
 
     private List<Models.Card> MythicalIslandCards = new();
     private List<CardData> MythicalIslandCardData = new();
+
+    private List<Models.Card> SpaceTimeSmackdownCards = new();
+    private List<CardData> SpaceTimeSmackdownCardData = new();
+
+    private List<Models.Card> TriumphantLightCards = new();
+    private List<CardData> TriumphantLightCardData = new();
+
+    private List<Models.Card> ShiningRevelryCards = new();
+    private List<CardData> ShiningRevelryCardData = new();
+
+    private List<Models.Card> CelestialGuardiansCards = new();
+    private List<CardData> CelestialGuardiansCardData = new();
+
+    private List<Models.Card> ExtradimensionalCrisisCards = new();
+    private List<CardData> ExtradimensionalCrisisCardData = new();
 
     private bool HasCalculated { get; set; } = false;
     private bool ShowKantoMewDetails { get; set; } = false;
@@ -172,7 +292,6 @@ else if (ActiveCollection == "MythicalIsland")
 
     private string ActiveCollection { get; set; } = "GeneticApex";
 
-
     private void SwitchCollection(string collectionName)
     {
         ActiveCollection = collectionName;
@@ -196,6 +315,36 @@ else if (ActiveCollection == "MythicalIsland")
         for (int i = 1; i <= 86; i++)
         {
             MythicalIslandCards.Add(new Models.Card { Id = i + 286, CardName = $"Card {i}", DisplayName = $"A1a {i:D3}" });
+        }
+
+        // Load Space-Time Smackdown (A2) Collection
+        for (int i = 1; i <= 207; i++)
+        {
+            SpaceTimeSmackdownCards.Add(new Models.Card { Id = i + 372, CardName = $"Card {i}", DisplayName = $"A2 {i:D3}" });
+        }
+
+        // Load Triumphant Light (A2a) Collection
+        for (int i = 1; i <= 96; i++)
+        {
+            TriumphantLightCards.Add(new Models.Card { Id = i + 579, CardName = $"Card {i}", DisplayName = $"A2a {i:D3}" });
+        }
+
+        // Load Shining Revelry (A2b) Collection
+        for (int i = 1; i <= 111; i++)
+        {
+            ShiningRevelryCards.Add(new Models.Card { Id = i + 675, CardName = $"Card {i}", DisplayName = $"A2b {i:D3}" });
+        }
+
+        // Load Celestial Guardians (A3) Collection
+        for (int i = 1; i <= 239; i++)
+        {
+            CelestialGuardiansCards.Add(new Models.Card { Id = i + 786, CardName = $"Card {i}", DisplayName = $"A3 {i:D3}" });
+        }
+
+        // Load Extradimensional Crisis (A3a) Collection
+        for (int i = 1; i <= 103; i++)
+        {
+            ExtradimensionalCrisisCards.Add(new Models.Card { Id = i + 1025, CardName = $"Card {i}", DisplayName = $"A3a {i:D3}" });
         }
 
         MainLayout.GridSizeChanged += UpdateGridSize; // Subscribe to grid size changes
@@ -233,6 +382,21 @@ else if (ActiveCollection == "MythicalIsland")
 
         var mythicalIslandJson = await Http.GetStringAsync("data/A1a.json");
         MythicalIslandCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(mythicalIslandJson);
+
+        var spaceTimeSmackdownJson = await Http.GetStringAsync("data/A2.json");
+        SpaceTimeSmackdownCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(spaceTimeSmackdownJson);
+
+        var triumphantLightJson = await Http.GetStringAsync("data/A2a.json");
+        TriumphantLightCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(triumphantLightJson);
+
+        var shiningRevelryJson = await Http.GetStringAsync("data/A2b.json");
+        ShiningRevelryCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(shiningRevelryJson);
+
+        var celestialGuardiansJson = await Http.GetStringAsync("data/A3.json");
+        CelestialGuardiansCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(celestialGuardiansJson);
+
+        var extradimensionalJson = await Http.GetStringAsync("data/A3a.json");
+        ExtradimensionalCrisisCardData = System.Text.Json.JsonSerializer.Deserialize<List<CardData>>(extradimensionalJson);
     }
 
     private void TogglePackDetails(string pack)
