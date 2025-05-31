@@ -9,14 +9,18 @@ Current expansions updated:
 - Mythical Island (A1a)
 
 - Space-Time Smackdown (A2)
-  
-To be implemented:
 
 - Triumphant Light (A2a)
 
 - Shining Revelry (A2b)
 
 - Celestial Guardians (A3)
+
+- Extradimensional Crisis (A3a)
+
+To be implemented:
+
+- N/A
   
 ---
 
