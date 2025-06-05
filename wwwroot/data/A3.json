@@ -1,0 +1,1436 @@
+﻿[
+  {
+    "CardID": "A3 001",
+    "CardName": "Exeggcute",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 002",
+    "CardName": "Alolan Exeggutor",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 003",
+    "CardName": "Surskit",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 004",
+    "CardName": "Masquerain",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 005",
+    "CardName": "Maractus",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 006",
+    "CardName": "Karrablast",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 007",
+    "CardName": "Phantump",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 008",
+    "CardName": "Trevenant",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 009",
+    "CardName": "Rowlet",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 010",
+    "CardName": "Rowlet",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 011",
+    "CardName": "Dartrix",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 012",
+    "CardName": "Decidueye ex",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 013",
+    "CardName": "Grubbin",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 014",
+    "CardName": "Fomantis",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 015",
+    "CardName": "Lurantis",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 016",
+    "CardName": "Morelull",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 017",
+    "CardName": "Shiinotic",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 018",
+    "CardName": "Bounsweet",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 019",
+    "CardName": "Steenee",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 020",
+    "CardName": "Tsareena",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 021",
+    "CardName": "Wimpod",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 022",
+    "CardName": "Golisopod",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 023",
+    "CardName": "Dhelmise ex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 024",
+    "CardName": "Tapu Bulu",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 025",
+    "CardName": "Growlithe",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 026",
+    "CardName": "Arcanine",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 027",
+    "CardName": "Alolan Marowak",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 028",
+    "CardName": "Fletchinder",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 029",
+    "CardName": "Talonflame",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 030",
+    "CardName": "Litten",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 031",
+    "CardName": "Litten",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 032",
+    "CardName": "Torracat",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 033",
+    "CardName": "Incineroar ex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 034",
+    "CardName": "Oricorio",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 035",
+    "CardName": "Salandit",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 036",
+    "CardName": "Salazzle",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 037",
+    "CardName": "Turtonator",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 038",
+    "CardName": "Alolan Sandschrew",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 039",
+    "CardName": "Alolan Sandslash",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 040",
+    "CardName": "Alolan Vulpix",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 041",
+    "CardName": "Alolan Ninetales",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 042",
+    "CardName": "Shellder",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 043",
+    "CardName": "Cloyster",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 044",
+    "CardName": "Lapras",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 045",
+    "CardName": "Popplio",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 046",
+    "CardName": "Popplio",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 047",
+    "CardName": "Brionne",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 048",
+    "CardName": "Primarina",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 049",
+    "CardName": "Crabominable ex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 050",
+    "CardName": "Wishiwashi",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 051",
+    "CardName": "Wishiwashi ex",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 052",
+    "CardName": "Dewpider",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 053",
+    "CardName": "Araquanid",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 054",
+    "CardName": "Pyukumuku",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 055",
+    "CardName": "Bruxish",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 056",
+    "CardName": "Tapu Fini",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 057",
+    "CardName": "Pikachu",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 058",
+    "CardName": "Alolan Raichu ex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 059",
+    "CardName": "Alolan Geodude",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 060",
+    "CardName": "Alolan Graveler",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 061",
+    "CardName": "Alolan Golem",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 062",
+    "CardName": "Helioptile",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 063",
+    "CardName": "Heliolisk",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 064",
+    "CardName": "Charjabug",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 065",
+    "CardName": "Vikavolt",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 066",
+    "CardName": "Oricorio",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 067",
+    "CardName": "Togedemaru",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 068",
+    "CardName": "Tapu Koko",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 069",
+    "CardName": "Mr. Mime",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 070",
+    "CardName": "Sableye",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 071",
+    "CardName": "Spoink",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 072",
+    "CardName": "Grumpig",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 073",
+    "CardName": "Lunatone",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 074",
+    "CardName": "Shuppet",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 075",
+    "CardName": "Banette",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 076",
+    "CardName": "Oricorio",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 077",
+    "CardName": "Oricorio",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 078",
+    "CardName": "Cutiefly",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 079",
+    "CardName": "Ribombee",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 080",
+    "CardName": "Comfey",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 081",
+    "CardName": "Sandygast",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 082",
+    "CardName": "Palossand",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 083",
+    "CardName": "Mimikyu",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 084",
+    "CardName": "Tapu Lele",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 085",
+    "CardName": "Cosmog",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 086",
+    "CardName": "Cosmoem",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 087",
+    "CardName": "Lunala ex",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 088",
+    "CardName": "Necrozma",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 089",
+    "CardName": "Cubone",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 090",
+    "CardName": "Makuhita",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 091",
+    "CardName": "Hariyama",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 092",
+    "CardName": "Solrock",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 093",
+    "CardName": "Drilbur",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 094",
+    "CardName": "Timburr",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 095",
+    "CardName": "Gurdurr",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 096",
+    "CardName": "Conkeldurr",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 097",
+    "CardName": "Crabrawler",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 098",
+    "CardName": "Rockruff",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 099",
+    "CardName": "Rockruff",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 100",
+    "CardName": "Lycanroc",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 101",
+    "CardName": "Lycanroc",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 102",
+    "CardName": "Mudbray",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 103",
+    "CardName": "Mudsdale",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 104",
+    "CardName": "Passimian ex",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 105",
+    "CardName": "Minior",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 106",
+    "CardName": "Alolan Rattata",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 107",
+    "CardName": "Alolan Raticate",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 108",
+    "CardName": "Alolan Meowth",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 109",
+    "CardName": "Alolan Persian",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 110",
+    "CardName": "Alolan Grimer",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 111",
+    "CardName": "Alolan Muk ex",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 112",
+    "CardName": "Absol",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 113",
+    "CardName": "Trubbish",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 114",
+    "CardName": "Garbodor",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 115",
+    "CardName": "Mareanie",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 116",
+    "CardName": "Toxapex",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 117",
+    "CardName": "Alolan Diglett",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 118",
+    "CardName": "Alolan Dugtrio",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 119",
+    "CardName": "Excadrill",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 120",
+    "CardName": "Escavalier",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 121",
+    "CardName": "Klefki",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 122",
+    "CardName": "Solgaleo ex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢♢"
+  },
+  {
+    "CardID": "A3 123",
+    "CardName": "Megearna",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 124",
+    "CardName": "Drampa",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 125",
+    "CardName": "Jangmo-o",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 126",
+    "CardName": "Hakamo-o",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 127",
+    "CardName": "Kommo-o",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 128",
+    "CardName": "Tauros",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 129",
+    "CardName": "Skitty",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 130",
+    "CardName": "Delcatty",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 131",
+    "CardName": "Fletchling",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 132",
+    "CardName": "Hawlucha",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 133",
+    "CardName": "Pikipek",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 134",
+    "CardName": "Trumbeak",
+    "Pack": "All",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 135",
+    "CardName": "Toucannon",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 136",
+    "CardName": "Yungoos",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 137",
+    "CardName": "Gumshoos",
+    "Pack": "Solgaleo",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 138",
+    "CardName": "Stufful",
+    "Pack": "Lunala",
+    "Rarity": "♢"
+  },
+  {
+    "CardID": "A3 139",
+    "CardName": "Bewear",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 140",
+    "CardName": "Oranguru",
+    "Pack": "Lunala",
+    "Rarity": "♢♢♢"
+  },
+  {
+    "CardID": "A3 141",
+    "CardName": "Komala",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 142",
+    "CardName": "Big Malasada",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 143",
+    "CardName": "Fishing Net",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 144",
+    "CardName": "Rare Candy",
+    "Pack": "All",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 145",
+    "CardName": "Rotom Dex",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 146",
+    "CardName": "Poison Barb",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 147",
+    "CardName": "Leaf Cape",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 148",
+    "CardName": "Acerola",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 149",
+    "CardName": "Ilima",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 150",
+    "CardName": "Kiawe",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 151",
+    "CardName": "Guzma",
+    "Pack": "Lunala",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 152",
+    "CardName": "Lana",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 153",
+    "CardName": "Sophocles",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 154",
+    "CardName": "Mallow",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 155",
+    "CardName": "Lillie",
+    "Pack": "Solgaleo",
+    "Rarity": "♢♢"
+  },
+  {
+    "CardID": "A3 156",
+    "CardName": "Alolan Exeggutor",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 157",
+    "CardName": "Morelull",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 158",
+    "CardName": "Tsareena",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 159",
+    "CardName": "Tapu Bulu",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 160",
+    "CardName": "Alolan Marowak",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 161",
+    "CardName": "Turtonator",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 162",
+    "CardName": "Alolan Vulpix",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 163",
+    "CardName": "Pyukumuku",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 164",
+    "CardName": "Tapu Fini",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 165",
+    "CardName": "Oricorio",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 166",
+    "CardName": "Tapu Koko",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 167",
+    "CardName": "Cutiefly",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 168",
+    "CardName": "Comfey",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 169",
+    "CardName": "Sandygast",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 170",
+    "CardName": "Tapu Lele",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 171",
+    "CardName": "Cosmog",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 172",
+    "CardName": "Rockruff",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 173",
+    "CardName": "Mudsdale",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 174",
+    "CardName": "Minior",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 175",
+    "CardName": "Magearna",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 176",
+    "CardName": "Drampa",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 177",
+    "CardName": "Pikipek",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 178",
+    "CardName": "Bewear",
+    "Pack": "Lunala",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 179",
+    "CardName": "Komala",
+    "Pack": "Solgaleo",
+    "Rarity": "☆"
+  },
+  {
+    "CardID": "A3 180",
+    "CardName": "Decidueye ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 181",
+    "CardName": "Dhelmise ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 182",
+    "CardName": "Incineroar ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 183",
+    "CardName": "Crabominable ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 184",
+    "CardName": "Wishiwashi ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 185",
+    "CardName": "Alolan Raichu ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 186",
+    "CardName": "Lunala ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 187",
+    "CardName": "Passimian ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 188",
+    "CardName": "Alolan Muk ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 189",
+    "CardName": "Solgaleo ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 190",
+    "CardName": "Acerola",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 191",
+    "CardName": "Ilima",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 192",
+    "CardName": "Kiawe",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 193",
+    "CardName": "Guzma",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 194",
+    "CardName": "Lana",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 195",
+    "CardName": "Sophocles",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 196",
+    "CardName": "Mallow",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 197",
+    "CardName": "Lillie",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 198",
+    "CardName": "Decidueye ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 199",
+    "CardName": "Dhelmise ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 200",
+    "CardName": "Incineroar ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 201",
+    "CardName": "Crabominable ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 202",
+    "CardName": "Wishiwashi ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 203",
+    "CardName": "Alolan Raichu ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 204",
+    "CardName": "Lunala ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 205",
+    "CardName": "Passimian ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 206",
+    "CardName": "Alolan Muk ex",
+    "Pack": "Lunala",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 207",
+    "CardName": "Solgaleo ex",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆"
+  },
+  {
+    "CardID": "A3 208",
+    "CardName": "Guzma",
+    "Pack": "Lunala",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A3 209",
+    "CardName": "Lillie",
+    "Pack": "Solgaleo",
+    "Rarity": "☆☆☆"
+  },
+  {
+    "CardID": "A3 210",
+    "CardName": "Bulbasaur",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 211",
+    "CardName": "Ivysaur",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 212",
+    "CardName": "Venusaur",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 213",
+    "CardName": "Exeggcute",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 214",
+    "CardName": "Exeggutor",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 215",
+    "CardName": "Squirtle",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 216",
+    "CardName": "Wartortle",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 217",
+    "CardName": "Blastoise",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 218",
+    "CardName": "Staryu",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 219",
+    "CardName": "Starmie",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 220",
+    "CardName": "Gastly",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 221",
+    "CardName": "Haunter",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 222",
+    "CardName": "Gengar",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 223",
+    "CardName": "Machop",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 224",
+    "CardName": "Machoke",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 225",
+    "CardName": "Machamp",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 226",
+    "CardName": "Cubone",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 227",
+    "CardName": "Marowak",
+    "Pack": "Lunala",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 228",
+    "CardName": "Jigglypuff",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 229",
+    "CardName": "Wigglytuff",
+    "Pack": "Solgaleo",
+    "Rarity": "✵"
+  },
+  {
+    "CardID": "A3 230",
+    "CardName": "Venusaur ex",
+    "Pack": "Solgaleo",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 231",
+    "CardName": "Exeggutor ex",
+    "Pack": "Lunala",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 232",
+    "CardName": "Blastoise ex",
+    "Pack": "Lunala",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 233",
+    "CardName": "Starmie ex",
+    "Pack": "Solgaleo",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 234",
+    "CardName": "Gengar ex",
+    "Pack": "Lunala",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 235",
+    "CardName": "Machamp ex",
+    "Pack": "Solgaleo",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 236",
+    "CardName": "Marowak ex",
+    "Pack": "Lunala",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 237",
+    "CardName": "Wigglytuff ex",
+    "Pack": "Solgaleo",
+    "Rarity": "✵✵"
+  },
+  {
+    "CardID": "A3 238",
+    "CardName": "Lunala ex",
+    "Pack": "All",
+    "Rarity": "♛"
+  },
+  {
+    "CardID": "A3 239",
+    "CardName": "Solgaleo ex",
+    "Pack": "All",
+    "Rarity": "♛"
+  }
+]
