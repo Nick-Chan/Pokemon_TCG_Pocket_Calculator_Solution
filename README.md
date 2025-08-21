@@ -20,7 +20,9 @@ Current expansions updated:
 
 To be implemented:
 
-- N/A
+- Eevee Grove (A3b)
+  
+- Wisdom of Sea and Sky (A4)
   
 ---
 
