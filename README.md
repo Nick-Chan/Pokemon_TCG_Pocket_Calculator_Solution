@@ -27,34 +27,34 @@ To be implemented:
 ---
 
 ## Links 
-🚀 **Live Site:** [Pokémon TCG Pocket Calculator](https://nick-chan.github.io/Pokemon_TCG_Pocket_Calculator/)  
+- **Live Site:** [Pokémon TCG Pocket Calculator](https://nick-chan.github.io/Pokemon_TCG_Pocket_Calculator/)  
 
-📂 **GitHub Repository:** [Nick-Chan/Pokemon_TCG_Pocket_Calculator](https://github.com/Nick-Chan/Pokemon_TCG_Pocket_Calculator)  
+- **GitHub Repository:** [Nick-Chan/Pokemon_TCG_Pocket_Calculator](https://github.com/Nick-Chan/Pokemon_TCG_Pocket_Calculator)  
 
 ---
 
 ## Features  
-✅ **Card Collection Tracker** – Select cards you own and see missing ones  
+- **Card Collection Tracker** – Select cards you own and see missing ones  
 
-📊 **Optimal Pack Calculation** – Finds the best packs to maximize new card pulls  
+- **Optimal Pack Calculation** – Finds the best packs to maximize new card pulls  
 
-📁 **Multiple Expansions Supported** – Switch between different Pokémon TCG sets  
+- **Multiple Expansions Supported** – Switch between different Pokémon TCG sets  
 
-⚡ **Fast & Lightweight** – Runs entirely in the browser (WebAssembly)  
+- **Fast & Lightweight** – Runs entirely in the browser (WebAssembly)  
 
 ---
 
 ## Stack  
 ### Frontend:  
-- 🖥️ **Blazor WebAssembly**  
-- 🎨 **CSS** for styling  
+- **Blazor WebAssembly**  
+- **CSS** for styling  
 
 ### Backend:  
-- ⚙️ **C#** for logic processing  
-- 💾 **JSON** for storing card data  
+- **C#** for logic processing  
+- **JSON** for storing card data  
 
 ### Hosting:  
-- 🌐 **GitHub Pages**  
+- **GitHub Pages**  
 
 ---
 
